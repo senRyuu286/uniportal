@@ -1,5 +1,3 @@
-UniPortal Developer said
-
 <h1 align="center">
 UniPortal
 </h1>
