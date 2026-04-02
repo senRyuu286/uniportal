@@ -1,0 +1,18 @@
+# frontend/Dockerfile.dev
+# Development image — Angular CLI dev server with polling for volume mounts
+
+FROM node:24.13.1-alpine
+
+WORKDIR /app
+
+# Copy dependency manifests first for layer caching
+COPY package*.json ./
+
+RUN npm install
+
+# Source is mounted via Docker volume — no COPY needed for dev
+EXPOSE 4200
+
+# --host 0.0.0.0 makes the dev server reachable from outside the container
+# --poll 500 enables file watching inside Docker volume mounts
+CMD ["npx", "ng", "serve", "--host", "0.0.0.0", "--poll", "500"]

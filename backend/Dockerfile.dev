@@ -1,0 +1,16 @@
+# backend/Dockerfile.dev
+# Development image — hot reload via ts-watch, source mounted as a volume
+
+FROM node:24.13.1-alpine
+
+WORKDIR /app
+
+# Copy dependency manifests first for layer caching
+COPY package*.json ./
+
+RUN npm install
+
+# Source is mounted via Docker volume — no COPY needed for dev
+EXPOSE ${PORT}
+
+CMD ["npm", "run", "start:dev"]

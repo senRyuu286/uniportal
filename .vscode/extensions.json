@@ -1,0 +1,34 @@
+{
+  "recommendations": [
+    // Angular
+    "angular.ng-template",
+
+    // NestJS / Node
+    "firsttris.vscode-jest-runner",
+
+    // TypeScript & general
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+
+    // Docker
+    "ms-azuretools.vscode-docker",
+
+    // PostgreSQL
+    "mtxr.sqltools",
+    "mtxr.sqltools-driver-pg",
+
+    // HTTP / REST testing
+    "humao.rest-client",
+
+    // Git
+    "eamodio.gitlens",
+
+    // NgRx
+    "timdeschryver.vscode-ngrx-snippets",
+
+    // Editor quality of life
+    "EditorConfig.EditorConfig",
+    "usernamehw.errorlens"
+  ]
+}

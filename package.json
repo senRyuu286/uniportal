@@ -1,0 +1,21 @@
+{
+  "name": "uniportal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UniPortal – University Student Information Portal monorepo",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "frontend": "npm run start --workspace=frontend",
+    "backend": "npm run start:dev --workspace=backend",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down",
+    "docker:reset": "docker compose down -v"
+  },
+  "engines": {
+    "node": ">=24.13.1",
+    "npm": ">=11.10.0"
+  }
+}

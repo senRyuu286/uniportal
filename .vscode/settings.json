@@ -1,0 +1,48 @@
+{
+  // ── Formatting ───────────────────────────────────────────────────────────────
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "vsicons.presets.angular": true,
+
+  // ── TypeScript ───────────────────────────────────────────────────────────────
+  "js/ts.tsdk.path": "frontend/node_modules/typescript/lib",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+
+  // ── Angular Language Service ─────────────────────────────────────────────────
+  "angular.log": "off",
+
+  // ── ESLint ───────────────────────────────────────────────────────────────────
+  "eslint.workingDirectories": [
+    { "directory": "frontend", "changeProcessCWD": true },
+    { "directory": "backend", "changeProcessCWD": true }
+  ],
+
+  // ── Files ────────────────────────────────────────────────────────────────────
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.angular": true,
+    "**/dist": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.angular": true,
+    "**/dist": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.angular/**": true,
+    "**/dist/**": true
+  },
+
+  // ── End of line / encoding ───────────────────────────────────────────────────
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+
+  // ── Editor ───────────────────────────────────────────────────────────────────
+  "editor.rulers": [100],
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
+}
